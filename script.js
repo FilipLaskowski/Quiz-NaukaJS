@@ -30,6 +30,7 @@ const tryAgain = function(){
 };
 
 const showResult = function(){
+    if(currentAnswer == '') return;
     if(currentAnswer.textContent == myQuestions[arrayNumber].correctAnswer){
             arrayNumber = arrayNumber + 1;
             currentAnswer.classList.add('green');
@@ -62,6 +63,7 @@ const buildQuiz = function(){
 }
 
 const startGame = function(){
+    currentAnswer = '';
     startQuizContainer.classList.add('none');
     quizContainer.classList.remove('none');
     buildQuiz();
