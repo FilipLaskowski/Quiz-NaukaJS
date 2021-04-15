@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en-EN'>
+    <head>
+        <title>Quiz</title>
+        <link rel='stylesheet' type='text/css' href='styles.css'></link>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class='startQuizContainer'>
+            <div class='startInfo'>
+                <h1>Awesome Quiz!!!</h1>
+                <img class='startImg' src='img/quiz.png'>
+                <div class='startButton button' onclick='startGame()'>Start!!!</div>
+            </div>
+        </div>
+        <div class='quizContainer none'>
+            <div class='questionContainer'>
+                <div class='question'></div>
+            </div>
+            <div class='possibleAnswers'>
+                <ul>
+                    <li class='a li'></li>
+                    <li class='b li'></li>
+                    <li class='c li'></li>
+                    <li class='d li'></li>
+                </ul>
+            </div>
+            <div class='showResult button' onclick='showResult()'>Check</div>
+        </div>
+        <div class='lose end none'>
+            <h1>You lost<br />
+            <i class="far fa-sad-tear"></i></h1>
+            <button class='button againButton' onclick='tryAgain()'>Try Again</button>
+        </div>
+        <div class='win end none'>
+            <h1>Congratulation<br />
+                You are awesome</h1>
+            <button class='button againButton' onclick='tryAgain()'>Do it again!</button>
+        </div>
+        <script src='script.js'></script>
+        <script src='questions.js'></script>
+    </body>
+</html>

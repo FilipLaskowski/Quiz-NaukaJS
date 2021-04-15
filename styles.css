@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 10px;
+    height: 100vh;
+    background: linear-gradient(to bottom, red, purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.startQuizContainer{
+    display: flex;
+    align-items: center;
+}
+.quizContainer{
+    width: 80%;
+    background-color: white;
+    border-radius: 30px;
+    text-align:center;
+}
+.startInfo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.startInfo h1{
+    font-size: 5vw;
+    text-align: center;
+    font-family: 'Bungee Shade', cursive;
+}
+.startImg{
+    width: 30%;
+    height: 30%;
+}
+.button{
+    margin: 5%;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'bungee';
+    color: white;
+    padding: 1vw 7vw;
+    background-image: linear-gradient(to right, red, purple);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background-size: 200% auto;
+    transition: background-position .9s;
+    cursor: pointer;
+}
+.button:hover{
+    box-shadow: 30px 20px 30px rgba(0,0,0,0.19), 15px 15px 15px rgba(0,0,0,0.23);
+    background-position: right center;
+    transition: background-position .9s;
+}
+.questionContainer{
+    height: auto;
+}
+.question{
+    font-size: 2.6rem;
+    font-family: 'bungee';
+    margin: 30px auto;
+    border-bottom: 2px solid red;
+}
+.possibleAnswers ul{
+    margin: 50px;
+    list-style-type: none;
+    font-size: 2rem;
+}
+.possibleAnswers li{
+    padding: 20px;
+    cursor: pointer;
+    font-family: 'bungee';
+}
+.possibleAnswers li:hover{
+    border: 2px solid blue;
+    background-color: lightskyblue;
+}
+.showResult{
+    font-size: 2.5rem;
+    margin: 10px;
+}
+.end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.end h1{
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Bungee Shade', cursive;
+}
+.far{
+    font-size: 10rem;
+}
+.green{
+    background-color: lightgreen;
+}
+.red{
+    background-color: lightpink;
+}
+.none{
+    display: none;
+}
+@media (orientation: portrait) {
+    .quizContainer{
+        width: 90%;
+    }
+    .startQuizContainer{
+        width: 90%;
+    }
+    .startInfo h1{
+        font-size: 4rem;
+    }
+    .startImg{
+        width: 40%;
+    }
+}
+@media (max-height: 700px){
+    body{
+        height: auto;
+    }
+}
