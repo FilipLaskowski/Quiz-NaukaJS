@@ -6,8 +6,9 @@
     box-sizing: border-box;
 }
 body{
-    font-size: 10px;
+    width: 100vw;
     height: 100vh;
+    font-size: 10px;
     background: linear-gradient(to bottom, red, purple);
     display: flex;
     justify-content: center;
@@ -21,7 +22,7 @@ body{
     width: 80%;
     background-color: white;
     border-radius: 30px;
-    text-align:center;
+    text-align: center;
 }
 .startInfo{
     display: flex;
@@ -29,7 +30,7 @@ body{
     flex-direction: column;
 }
 .startInfo h1{
-    font-size: 5vw;
+    font-size: 5rem;
     text-align: center;
     font-family: 'Bungee Shade', cursive;
 }
@@ -121,8 +122,42 @@ body{
         width: 40%;
     }
 }
-@media (max-height: 700px){
-    body{
-        height: auto;
+@media (max-height: 845px){
+    .startInfo h1{
+        font-size: 3rem;
+    }
+    .possibleAnswers ul{
+        margin: 10px;
+    }
+    .possibleAnswers li{
+        padding: 5px;
+    }
+    .question{
+        font-size: 2rem;
+    }
+    .showResult{
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+}
+@media (max-height: 600px){
+    .startInfo h1{
+        font-size: 2rem;
+    }
+    .question{
+        font-size: 1rem;
+    }
+    .possibleAnswers li{
+        padding: 5px;
+        font-size: 1rem;
+    }
+    .button{
+        font-size: 1rem;
+    }
+    .question{
+        margin: 2%;
+    }
+    .end h1{
+        font-size: 2rem;
     }
 }
