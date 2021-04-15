@@ -1,22 +1,92 @@
 const myQuestions = [
     {
-        question: "Who invented JavaScript?",
+        question: "What is the capital of Chile?",
         answers: {
-            a: "Douglas Crockford",
-            b: "Sheryl Sandberg",
-            c: "Brendan Eich",
-            d: 'sdasdsad'
+            a: "London",
+            b: "Santiago",
+            c: "Santa Cruz",
+            d: 'Monteviedo'
           },
-        correctAnswer: "Brendan Eich"
+        correctAnswer: "Santiago"
     },
     {
-        question: "Which one of these is a JavaScript package manager?",
+        question: "What is the highest mountain in Britain?",
         answers: {
-          a: "Node.js",
-          b: "TypeScript",
-          c: "npm",
-          d: 'sdasdsad'
+          a: "Ben Nevis",
+          b: "Mount Elbrus",
+          c: "Mount Arrarat",
+          d: 'Mount Whilhelm'
         },
-        correctAnswer: "npm"
-      }
+        correctAnswer: "Ben Nevis"
+    },
+    {
+      question: "What is the smallest country in the world?",
+      answers: {
+        a: "Vatican City",
+        b: "Guyana",
+        c: "Surinam",
+        d: 'Cuba'
+      },
+      correctAnswer: "Vatican City"
+    },
+    {
+      question: "Alberta is a province of which country?",
+      answers: {
+        a: "England",
+        b: "Australia",
+        c: "USA",
+        d: 'Canada'
+      },
+      correctAnswer: "Canada"
+    },
+    {
+      question: "How many countries still have the shilling as currency?",
+      answers: {
+        a: "Four",
+        b: "Five",
+        c: "Two",
+        d: 'Three'
+      },
+      correctAnswer: "Four"
+    },
+    {
+      question: "What is the largest country in the world?",
+      answers: {
+        a: "Russia",
+        b: "Canada",
+        c: "Australia",
+        d: 'Brazil'
+      },
+      correctAnswer: "Russia"
+    },
+    {
+      question: "Where would you find the River Thames?",
+      answers: {
+        a: "Paris",
+        b: "Milan",
+        c: "London",
+        d: 'Berlin'
+      },
+      correctAnswer: "London"
+    },
+    {
+      question: "What is the hottest continent on Earth?",
+      answers: {
+        a: "Asia",
+        b: "Australia",
+        c: "Europe",
+        d: 'Africa'
+      },
+      correctAnswer: "Africa"
+    },
+    {
+      question: "What is the longest river in the world?",
+      answers: {
+        a: "Amazon",
+        b: "Nile",
+        c: "Congo",
+        d: 'Ganges'
+      },
+      correctAnswer: "Nile"
+    },
 ]
